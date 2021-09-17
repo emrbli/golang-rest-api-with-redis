@@ -1,0 +1,74 @@
+<!-- index.html -->
+<html>
+
+<head>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/528/528101.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <title>To Do for Modanisa</title>
+</head>
+
+<body>
+    <div class="d-flex justify-content-center" style="margin-top: 5%;">
+        <div class="card" style="width: 34rem;">
+            <h5 class="card-header">To Do List - Modanisa</h5>
+            <div class="card-body">
+                <div id="app">
+                    <p class="card-text">Hello, {{ name }}</p>
+                    <p>
+                        <input class="col-form-label" type="text" v-model="inputTodo" placeholder="Enter new todo" />
+                        <span id="passwordHelpInline" class="form-text">
+                            <button class="btn btn-success" @click="createTodo">Submit</button>
+                        </span>
+                    </p>
+                    <ul class="list-group list-group ">
+                        <li class="list-group-item d-flex justify-content-between" v-for="todo in todos">
+                            {{ todo }} &nbsp;
+                            <button style="cursor: pointer; margin-right: 3px;" type="button" class="btn btn-outline-danger btn-sm"
+                                @click="deleteTodo(todo)">Delete</button>
+
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+    </div>
+
+   
+
+    <!--<script src="https://unpkg.com/vue"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <script src="./src/main.js"></script>
+
+
+<!--
+        -=[ Pikachu ]=- 
+  
+           ,     ,_
+           |`\    `;;,            ,;;'
+           |  `\    \ '.        .'.'
+           |    `\   \  '-""""-' /
+           `.     `\ /          |`
+             `>    /;   _     _ \ 
+              /   / |       .    ;
+             <  (`";\ ()   ~~~  (/_
+              ';;\  `,     __ _.-'` )
+                >;\          `   _.'
+                `;;\          \-'
+                  ;/           \ _
+                  |   ,"".     .` \
+                  |      _|   '   /
+                   ;    /")     .;-,
+        kemal.eb    \    /  __   .-'
+                     \,_/-"`  `-'
+-->
+</body>
+
+</html>
