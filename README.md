@@ -19,11 +19,11 @@ This documentation specifies the tools used in the todo app and how to use it. F
 
 - **Docker** for container technologies.
 
-- **Gitlab** for CI/CD.
+- **Gitlab** for CI/CD.(!)
 
-- **Kubernetes** for clustering.
+- **Kubernetes** for clustering.(!)
 
-- **Google Cloud** for cloud technologies.
+- **Google Cloud** for cloud technologies.(!)
 
 ---
 <h3> Tests</h3>
