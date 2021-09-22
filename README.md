@@ -13,4 +13,9 @@ This documentation specifies the tools used in go-server and redis how to use it
 
 - **Docker** for container technologies.
 
-# golang-rest-api-with-redis
+---
+<h3> For Using </h3>
+
+- Install Docker what you use operating system.
+- Go to the location where you uploaded the project
+- Run "docker-compose up"
