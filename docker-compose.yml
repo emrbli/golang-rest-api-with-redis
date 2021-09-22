@@ -3,7 +3,7 @@ services:
   
   golang-app:
     build: ./backend
-    container_name: go-server
+    container_name: golang-server
     ports:
       - "8082:8081"
     links: 
